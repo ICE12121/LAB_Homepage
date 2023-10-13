@@ -645,9 +645,10 @@ progress {
   justify-content: center; /* Horizontally center the child elements */
   align-items: center; /* Vertically center the child elements */
   height: auto; /* Take up the full height, you can adjust as needed */
-  width: 150%;
+  width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
+  flex-direction: column;
 
 }
 
@@ -11639,14 +11640,17 @@ html {
   transform: translateX(-50%);
 }
 .img-responsive {
+  /* justify-content: center; */
   width: 100vw;   /* Adjust this for responsive width */
   max-width: 1000px;  /* Maximum width limit */
   height: auto;  
    /* Maintains aspect ratio */
   /* position: absolute;
   bottom: 0; */
-  left: 50%;
-  transform: translateX(-50%);
+  margin: auto;
+  align-items: center;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 }
 
 .profile .dots-1 {

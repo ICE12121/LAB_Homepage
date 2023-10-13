@@ -2,9 +2,14 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
       {/* ... */}
       <div class="container px-5">
                     <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">INALAB </span></a> 
@@ -12,12 +17,12 @@ function Header() {
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">メンバー紹介</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">アクセス</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">卒業メンバー</a></li>
+                            <li class="nav-item my-auto"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item my-auto"><a class="nav-link" href="/Member">メンバー紹介</a></li>
+                            <li class="nav-item my-auto"><a class="nav-link" href="/Labloca">アクセス</a></li>
+                            <li class="nav-item my-auto"><a class="nav-link" href="/news">お知らせ</a></li>
                             <a class="btn btn-primary btn-lg px-3 py-1 me-sm-2 fs-10 fw-bolder" href="Login.html">Login</a>
-                            <Button variant="outline-primary">Sign up</Button>{' '}
+                            {/* <Button variant="outline-primary">Sign up</Button>{' '} */}
                         </ul>
                     </div>
                 </div>

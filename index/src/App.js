@@ -1,33 +1,32 @@
 import './App.css';
 import React from 'react';
-// import Navbar from './component/Navbar.js';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Member from './component/Member';
 import Header from './component/Header';
 import Footer from './component/Footer';
-import MainContent from './component/MainContent';
 import ProfilePicture from './component/ProfilePicture';
-// src/
-// ├── components/
-// │   ├── Header.js
-// │   ├── ProfilePicture.js
-// │   ├── MainContent.js
-// │   ├── Footer.js
-// ├── App.js
-// └── index.js
+import Lablocal from './component/Labloca';
+import News from './component/News';
 
 function App() {
   return (
-    <div>
-      {/* <Navbar/> */}
-      <div className="d-flex flex-column h-100">
-      <Header />
-      <main className="flex-shrink-0">
-        <ProfilePicture />
-        {/* <MainContent /> */}
-      </main>
-      <Footer />
-    </div>
-    </div>
-  
+    <Router>
+      <div class="d-flex flex-column h-100">
+        <Header />
+
+        <main class="flex-shrink-0">
+          {/* Setup Routes */}
+          <Routes>
+            <Route path="/index.html" element={<ProfilePicture />} />
+            <Route path="/member" element={<Member/>} />
+            <Route path="/Labloca" element={<Lablocal/>} />
+            <Route path="/News" element={<News/>} />
+            </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
