@@ -25,6 +25,15 @@ D棟5階 <br/>
 <li>5090号室</li><br/>
 <li>5100号室</li> <br/>
 <li>5110号室</li><br/>
+
+<h2>外部リンク</h2>
+	<ul>
+        <li><a href="http://www.fit.ac.jp/~barolli/" target="_blank">バロリ先生のHP</a></li>
+        <li><a href="http://ikdlab.ce.fit.ac.jp/" target="_blank">池田研究室</a></li>
+        <li><a href="http://www.grd.fit.ac.jp/" target="_blank">福岡工業大学大学院</a></li>
+        <li><a href="http://www.fit.ac.jp/" target="_blank">福岡工業大学</a></li>
+        <li><a href="http://www.fit.ac.jp/site/joho_tsushin/" target="_blank">情報通信工学科</a></li>
+	</ul>
     </div>
         </div>
 

@@ -7,6 +7,7 @@ import Footer from './component/Footer';
 import ProfilePicture from './component/ProfilePicture';
 import Lablocal from './component/Labloca';
 import News from './component/News';
+import Login from './component/Login';
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
         <main class="flex-shrink-0">
           {/* Setup Routes */}
           <Routes>
-            <Route path="/index.html" element={<ProfilePicture />} />
+            <Route path="/" element={<ProfilePicture />} />
             <Route path="/member" element={<Member/>} />
             <Route path="/Labloca" element={<Lablocal/>} />
             <Route path="/News" element={<News/>} />
+            <Route path="/Login" element={<Login/>} />
             </Routes>
         </main>
 

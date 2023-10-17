@@ -1,7 +1,7 @@
 // ProfilePicture.js
 import React from 'react';
 import '../css/styles.css';
-import Section from './Section';
+
 
 function ProfilePicture() {
   return (
