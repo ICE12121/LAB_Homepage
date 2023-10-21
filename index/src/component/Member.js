@@ -25,9 +25,9 @@ const undergraduateStudents_2021 = ["B4:  Ono Kenta", "B4:  Kawakami Kouya", "B4
 
 const Member = () => {
     return (
-    <div class="container px-5 my-5">
-        <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">研究メンバー</span></h1>
+    <div className="container px-5 my-5">
+        <div className="text-center mb-5">
+                    <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">研究メンバー</span></h1>
         </div>
         {/* Member 2023 */}
         <MemberCard
