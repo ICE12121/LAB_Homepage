@@ -5,10 +5,10 @@ import { useAuth } from './AuthContext'; // Import your authentication context
 
 
 function Login() {
-    const HARDCODED_CREDENTIALS = {
-        username: 'admin',
-        password: 'fitfit'
-    }
+    // const HARDCODED_CREDENTIALS = {
+    //     username: 'admin',
+    //     password: 'fitfit'
+    // }
         // For navigation after successful login
         const navigate = useNavigate();
 
@@ -19,22 +19,51 @@ function Login() {
         });
         const [loginError, setLoginError] = useState('');
         const { login } = useAuth(); // using login method from auth context
-    
-        // This method will handle the form submission
         const handleSubmit = async (e) => {
             e.preventDefault();
-            // Check if the credentials match the hardcoded ones
-    if (loginInfo.username === HARDCODED_CREDENTIALS.username && loginInfo.password === HARDCODED_CREDENTIALS.password) {
-        // If they match, "log in"
-        login({ name: loginInfo.username }); // passing user information
+        
+            try {
+                // Send a request to the login route
+                const response = await fetch('http://150.43.231.109:3000/login', {  // the URL of your server, not the React app
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(loginInfo)  // send the loginInfo state as the request body
+                });
+        
+                const responseData = await response.json();
+        
+                if (responseData.success) {
+                    console.log(responseData.message);
+                    login({ name: loginInfo.username });  // set the auth context
+                    navigate('/Admin_homepage');
+                } else {
+                    console.error(responseData.message);
+                    setLoginError(responseData.message);
+                }
+            } catch (error) {
+                console.error('An error occurred during login:', error);
+                setLoginError('An error occurred during login. Please try again.');
+            }
+        };
+    //     // This method will handle the form submission
+    //     const handleSubmit = async (e) => {
+    //         e.preventDefault();
+    //         // Check if the credentials match the hardcoded ones
+    // if (loginInfo.username === HARDCODED_CREDENTIALS.username && loginInfo.password === HARDCODED_CREDENTIALS.password) {
+    //     // If they match, "log in"
+    //     login({ name: loginInfo.username }); // passing user information
 
-        console.log('Login successful.');
-        navigate('/Admin_homepage'); // navigate only if credentials are correct
-    } else {
-        // If credentials don't match, set an error message
-        setLoginError('Invalid username or password. Please try again.');
-    }
-            // Check if the credentials match the hardcoded ones
+    //     console.log('Login successful.');
+    //     navigate('/Admin_homepage'); // navigate only if credentials are correct
+    // } else {
+    //     // If credentials don't match, set an error message
+    //     setLoginError('Invalid username or password. Please try again.');
+    // }
+    //     };
+
+                    // Check if the credentials match the hardcoded ones
             // if (loginInfo.username === HARDCODED_CREDENTIALS.username && loginInfo.password === HARDCODED_CREDENTIALS.password) {
             //     try {
             //         // If they match, call the login function from your Auth context
@@ -55,7 +84,6 @@ function Login() {
             //     // If credentials don't match, set an error message
             //     setLoginError('Invalid username or password. Please try again.');
             // }
-        };
         
         const handleChange = (e) => {
             const { name, value } = e.target;

@@ -11847,3 +11847,6 @@ button:focus {
   color: #fff;
 }
 
+.section-spacing {
+  margin-bottom: 100px; /* This creates space below your section */
+}

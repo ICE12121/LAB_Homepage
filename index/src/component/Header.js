@@ -25,7 +25,7 @@ function Header() {
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                                <li className="nav-item my-auto"><a className="nav-link" href="/">Home</a></li>
+                                <li className="nav-item my-auto"><a className="nav-link" href="/Admin_homepage">Home</a></li>
                                 <li className="nav-item my-auto"><a className="nav-link" href="/Member">メンバー紹介</a></li>
                                 <li className="nav-item my-auto"><a className="nav-link" href="/Labloca">アクセス</a></li>
                                 <li className="nav-item my-auto"><a className="nav-link" href="/news">お知らせ</a></li>
