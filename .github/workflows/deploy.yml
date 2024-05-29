@@ -13,13 +13,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Go inside index folder
-        run: cd index
-
       - name: Install dependencies
+        working-directory: ./index
         run: npm install
 
       - name: Build
+        working-directory: ./index
         run: npm run build
 
       - name: Deploy to web server
