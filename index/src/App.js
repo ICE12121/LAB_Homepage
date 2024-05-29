@@ -17,7 +17,7 @@ function App() {
         <main class="flex-shrink-0">
           {/* Setup Routes */}
           <Routes>
-            <Route path="/index.html" element={<ProfilePicture />} />
+            <Route path="/" element={<ProfilePicture />} />
             <Route path="/member" element={<Member/>} />
             <Route path="/Labloca" element={<Lablocal/>} />
             <Route path="/News" element={<News/>} />
