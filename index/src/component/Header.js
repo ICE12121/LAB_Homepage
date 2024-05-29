@@ -21,7 +21,7 @@ function Header() {
                             <li class="nav-item my-auto"><a class="nav-link" href="/Member">メンバー紹介</a></li>
                             <li class="nav-item my-auto"><a class="nav-link" href="/Labloca">アクセス</a></li>
                             <li class="nav-item my-auto"><a class="nav-link" href="/news">お知らせ</a></li>
-                            <a class="btn btn-primary btn-lg px-3 py-1 me-sm-2 fs-10 fw-bolder" href="Login.html">Login</a>
+                            <a class="btn btn-primary btn-lg px-3 py-1 me-sm-2 fs-10 fw-bolder" href="https://voyager.ce.fit.ac.jp/fileserver/login.php">Login</a>
                             {/* <Button variant="outline-primary">Sign up</Button>{' '} */}
                         </ul>
                     </div>

@@ -3,6 +3,12 @@ import React from 'react';
 import MemberCard from './Memebercard';
 
 //Member_2023
+const yearnumber2024=["2024"];
+const doctoralResearchers_2024 = ["Ermioni Qafzezi"];
+const doctoralStudents_2024 = ["D3: Phudit Ampririt"];
+const masterStudents_2024 = ["M2: Higashi Shunya", "M1: Irie Yusuke"];
+const undergraduateStudents_2024 = ["B4: Kawaguchi Yuki", "B4: Kondo Koya", "B4: Sohara Naoya", "B4: Yoshida Tomose", "B4: Saito Kentaro", "B4: Nagatani Taiki", "B4: Nanamatasu Taiga", "B4: Miyazaki Taisei"];
+//Member_2023
 const yearnumber2023=["2023"];
 const doctoralResearchers_2023 = ["Ermioni Qafzezi"];
 const doctoralStudents_2023 = ["D3: Phudit Ampririt"];
@@ -29,6 +35,15 @@ const Member = () => {
         <div class="text-center mb-5">
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">研究メンバー</span></h1>
         </div>
+                {/* Member 2024 */}
+                <MemberCard
+  yearnumber={yearnumber2024}
+  professorName="Prof. Leonard Barolli"
+  doctoralResearchers={doctoralResearchers_2024}
+  doctoralStudents={doctoralStudents_2024}
+  masterStudents={masterStudents_2024}
+  undergraduateStudents={undergraduateStudents_2024}
+/>
         {/* Member 2023 */}
         <MemberCard
   yearnumber={yearnumber2023}
