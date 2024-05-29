@@ -7,6 +7,7 @@ import Footer from './component/Footer';
 import ProfilePicture from './component/ProfilePicture';
 import Lablocal from './component/Labloca';
 import News from './component/News';
+import NotFound from './component/NotFound';
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
             <Route path="/member" element={<Member/>} />
             <Route path="/Labloca" element={<Lablocal/>} />
             <Route path="/News" element={<News/>} />
-            </Routes>
+
+              {/* Route for NotFound */}
+         <Route path="*" element={<NotFound/>} />
+          </Routes>
         </main>
 
         <Footer />
