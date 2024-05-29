@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Go inside index folder
-        run: cd /index
+        run: cd index
 
       - name: Install dependencies
         run: npm install
