@@ -8,7 +8,8 @@ const Lablocal = () => {
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">本研究室への案内</span></h1>
         </div>
         <div class="d-flex flex-coloum text-left mb-5">
-        <iframe
+        <iframe 
+        title='map'
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6639.0417027018875!2d130.439456!3d33.695469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354188e7d7dcd653%3A0xee3436e91c2715c6!2z56aP5bKh5bel5qWt5aSn5a2m!5e0!3m2!1sja!2sus!4v1697178825384!5m2!1sja!2sus"
       width="600"
       height="450"

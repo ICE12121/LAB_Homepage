@@ -1,7 +1,6 @@
 // ProfilePicture.js
 import React from 'react';
 import '../css/styles.css';
-import Section from './Section';
 
 function ProfilePicture() {
   return (
@@ -72,19 +71,3 @@ function ProfilePicture() {
 }
 
 export default ProfilePicture;
-          {/* <left><h1>研究内容紹介</h1></left>
-          ようこそINA研究室ホームページへ.
-
-本研究室では主に以下の内容に関する研究を行っています
-          <ul>
-            <li>無線メッシュネットワーク</li>
-            <li>モバイルアドホックネットワーク</li>
-            <li>車々間ネットワーク</li>
-            <li>センサネットワーク</li>
-            <li>セルラーネットワーク</li>
-            <li>Tor（The Onion Router）を用いたネットワーク</li>
-            <li>JXTAオーバーレイネットワーク</li>
-            <li>Internet of Things</li>
-            <li>知的アルゴリズム</li>
-            <li>高信頼性P2P（Peer to Peer）システム</li>
-          </ul> */}
