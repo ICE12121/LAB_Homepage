@@ -12,10 +12,10 @@ import NotFound from './component/NotFound';
 function App() {
   return (
     <Router>
-      <div class="d-flex flex-column h-100">
+      <div className="d-flex flex-column h-100">
         <Header />
 
-        <main class="flex-shrink-0">
+        <main className="flex-shrink-0">
           {/* Setup Routes */}
           <Routes>
             <Route path="/" element={<ProfilePicture />} />
