@@ -22,7 +22,7 @@ function MemberCard({
             </div>
           </div>
           <div className="col-lg-8">
-            <div className="small fw-bolder">博士研究員</div>
+            <div className="small fw-bolder">特任助教</div>
             <ul className="small text-muted">
               {doctoralResearchers.map((name, index) => (
                 <li key={index}>

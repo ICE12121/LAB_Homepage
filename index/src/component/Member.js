@@ -4,9 +4,9 @@ import MemberCard from './Memebercard';
 
 //Member_2023
 const yearnumber2024=["2024"];
-const doctoralResearchers_2024 = ["Ermioni Qafzezi"];
-const doctoralStudents_2024 = ["D3: Phudit Ampririt"];
-const masterStudents_2024 = ["M2: Higashi Shunya", "M1: Irie Yusuke"];
+const doctoralResearchers_2024 = ["Ermioni Qafzezi", "Phudit Ampririt"];
+const doctoralStudents_2024 = ["No"];
+const masterStudents_2024 = ["M2: Higashi Shunya", "M1: Irie Yusuke", "M1: Paboth Kraikritayakul"];
 const undergraduateStudents_2024 = ["B4: Kawaguchi Yuki", "B4: Kondo Koya", "B4: Sohara Naoya", "B4: Yoshida Tomose", "B4: Saito Kentaro", "B4: Nagatani Taiki", "B4: Nanamatasu Taiga", "B4: Miyazaki Taisei"];
 //Member_2023
 const yearnumber2023=["2023"];
